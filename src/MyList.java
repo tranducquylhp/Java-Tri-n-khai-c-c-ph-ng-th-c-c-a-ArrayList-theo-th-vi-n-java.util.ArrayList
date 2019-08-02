@@ -63,7 +63,7 @@ public class MyList<E> {
     }
 
     public boolean contains(E o) {
-        return indexOf(o) > 0;
+        return indexOf(o) >= 0;
     }
 
     public boolean add(E e) {
