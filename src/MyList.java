@@ -49,8 +49,12 @@ public class MyList<E> {
         return this.size;
     }
 
-    public E clone() {
-        return (E) elements;
+    public Object[] clone() {
+        Object[] temp = new Object[size];
+        for (int i=0; i<size; i++){
+            temp[i] = elements[i];
+        }
+        return temp;
     }
 
     public int indexOf(E o) {

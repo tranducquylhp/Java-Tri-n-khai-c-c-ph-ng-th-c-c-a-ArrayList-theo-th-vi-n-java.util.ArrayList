@@ -23,6 +23,11 @@ public class MyListTest {
             System.out.println(myList.get(i));
         }
 
+        Object[] myList1 = myList.clone();
         myList.clear();
+        System.out.println("Danh sach myList1:");
+        for (int i=0; i<myList1.length; i++){
+            System.out.println(myList1[i]);
+        }
     }
 }
